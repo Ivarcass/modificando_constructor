@@ -24,14 +24,22 @@ public class MaquinaExpendedoraSimple {
         estacionDestino = "Oviedo";
     }
 
-        /**
-     */
+    /**
+    * Crea una máquina expendedora con Salida en León y precio y destino dados.
+    */
     public MaquinaExpendedoraSimple(int precioDelBillete, String estacionDeDestino) {
         precioBillete = precioDelBillete;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
         estacionOrigen = "León";
         estacionDestino = estacionDeDestino;
+    }
+    
+    /**
+     * Muestra el dinero acumulado
+     */
+    public int getTotalDineroAcumulado(){
+        return totalDineroAcumulado;
     }
     
     /**
